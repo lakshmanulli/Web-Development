@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TS BUSS PASS</title>
+</head>
+<body>
+    <header><CENTER>
+        <h1>TELANGANA STATE ROAD TRANSPORT CORPORATION</h1>
+        <h1>GENERAL BUS PASS APPLICATION</h1>
+        
+    </CENTER>
+    </header>
+    <fieldset>
+        <legend>
+            <P>Applicant Details</P>
+        </legend>
+        <form action="./data.html">
+        <!--<form action="./data.html"> -->
+          <label for="Name">Name        <span style="color: red;">*</span>    </label>
+          <input type="text"0 id="Name" placeholder="Enter name" required name="name" pattern="[a-zA-Z]{20}" title="Only letters are allowed, up to 20 characters">
+          
+          <span style="margin-left: 300px;"></span> 
+          
+          <label for="Father name">Father's/ Guardian's name    <span style="color: red;">*</span>   </label>
+          <input type="text" id="Father name" placeholder="Enter name" required name="Father name" pattern="[a-zA-Z]{20}"  title="Only letters and spaces are allowed, up to 20 characters">
+          <br><br>
+          <label for="dob">Date of Birth  <span style="color: red;">*</span>   </label>
+          <input type="date" id="dob" required name="dob" title="Please select your date of birth">
+          
+          <span style="margin-left: 300px;"></span> 
+          
+          <label>Gender</label>
+          <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+<br><br>
+        <label for="age">Age As On : </label>
+        <input type="text" size="2" id="age">
+        <label for="ageYear">Year(s)</label>
+
+        <input type="text"  size="2"> 
+        <label for="ageYear">months(s)</label>
+        <input type="text" size="4">
+        <label for="ageYear">days(s)</label>
+        
+           
+        <span style="margin-left: 200px;"></span>
+
+        <label for="aadhar">Aadhaar No  <span style="color: red;">*</span>  </label>
+         <input type="text" id="aadhar" pattern="[0-9]{16}">
+        <br><br>
+ 
+        <label for="whatsapp" >whatsapp No  <span style="color: red;">*</span>  </label> </label>
+       <input type="text" id="whatsapp" pattern="/+91[6789]{9}" title="only numbers used">
+
+
+        <span style="margin-left: 300px;"></span> 
+
+        <label for="email">E-mail Id <span style="color: red;">*</span>  </label> </label>
+        <input type="email" id="photo" name="photo"  required pattern="[a-zA-Z/d/s]+@gmail.com" title="lowercase uppercase alphabets & special character atleat one numbers">
+        <br><br>
+        
+       <label for="">
+         <label for="photo">Photo <span style="color: red;">*</span></label>
+        <input type="file" id="photo" accept="image/*" required>
+    </label>
+       <!--</form>-->
+
+
+        
+    </fieldset>
+
+
+    <fieldset>
+        <legend>
+          <p>Residential Address Details</p>
+        </legend>
+      
+        <!--<form action="/data.html"> -->
+         
+          <label for="address">Applicant Address <span style="color: red;">*</span></label> 
+          <textarea name="Address"  id="address"   rows="2"  required  placeholder="Enter your address"></textarea>
+          <br><br>
+      
+         
+          <label for="district">District <span style="color: red;">*</span></label>
+          <select name="district" id="district" required>
+            <option value="" disabled selected>Select District</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Warangal">Warangal</option>
+          </select>
+          <br><br>
+
+          <label for="mondal">Village <span style="color: red;">*</span></label>
+          <select id="mondal" name="mondal" required>
+            <option value="" disabled selected>Select Village</option>
+            <option value="Hyderabad">Hyderabad</option>
+          </select>
+          <br><br>
+      
+          <label for="village">Village <span style="color: red;">*</span></label>
+          <select id="village" name="village" required>
+            <option value="" disabled selected>Select Village</option>
+            <option value="Hyderabad">Hyderabad</option>
+          </select>
+          <br><br>
+      
+          <label for="pincode">Pincode <span style="color: red;">*</span></label>
+          <input  type="text"   id="pincode"  name="pincode"  required  pattern="[0-9]{6}" title="Enter a valid 6-digit Pincode" 
+           placeholder="6-digit Pincode">
+          <br><br>
+      
+          
+        <!-- </form> -->
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          <p>Pass Type Details</p>
+        </legend>
+      
+        <!-- <form action="/data.html">  -->
+          <label for="city">City <span style="color: red;">*</span></label>
+          <select name="city" id="city" required>
+            <option value="" disabled selected>Select</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Warangal">Warangal</option>
+          </select>
+          <br><br>
+      
+          <label for="pass_type">Pass Type <span style="color: red;">*</span></label>
+          <select name="pass_type" id="pass_type" required>
+            <option value="" disabled selected>Select</option>
+            <option value="Monthly">Monthly</option>
+            <option value="Quarterly">Quarterly</option>
+            <option value="Yearly">Yearly</option>
+          </select>
+          <br><br>
+    
+       <!-- </form> -->
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          <p>Mode of Payment & Pass Collection</p>
+        </legend>
+      
+       <!--  <form action="/data.html">  -->
+
+          <label for="payment_mode">Payment Mode <span style="color: red;">*</span></label>
+          <select name="payment_mode" id="payment_mode" required>
+            <option value="" disabled selected>Select Payment Mode</option>
+            <option value="Online">Online</option>
+            <option value="Cash">Cash</option>
+            <option value="Card">Card</option>
+          </select>
+          <br><br>
+      
+       
+          <label for="delivery_mode">Pass Delivery Mode <span style="color: red;">*</span></label>
+          <select name="delivery_mode" id="delivery_mode" required>
+            <option value="" disabled selected>Select Pass Delivery Mode</option>
+            <option value="Home Delivery">Home Delivery</option>
+            <option value="Office Pickup">Office Pickup</option>
+            <option value="Center Pickup">Center Pickup</option>
+          </select>
+          <br><br>
+      
+        
+          <label for="collection_center">Center at which you want to Collect Pass <span style="color: red;">*</span></label>
+          <select name="collection_center" id="collection_center" required>
+            <option value="" disabled selected>Select</option>
+            <option value="Hyderabad Center">Hyderabad Center</option>
+           
+          </select>
+          <br><br>
+      
+    
+        <!--</form>-->
+      </fieldset>
+    
+      <center>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBL5dDUkVc1q32PliUo5dLX7OeAmhN4A-9Jg&s" width="90" alt="CAPTCHA Image" />
+      <form action=""><br>
+          <input type="text" name="captcha" placeholder="Enter CAPTCHA text" required><br>
+          <button type="submit">Submit</button>
+      </form>
+      </center>
+    </form>
+</body>
+</html>

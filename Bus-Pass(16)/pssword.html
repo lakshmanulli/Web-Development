@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password</title>
+</head>
+<body>
+    <header><h1>Password and Email Validation</h1></header>
+
+<form action="./data.html">
+  
+  <label for="password">Password</label>
+  <input 
+    type="text" 
+    id="password" 
+    name="Password" 
+    required 
+    pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{8,16}" 
+    title="Password must be 8-16 characters long, include at least one lowercase letter, one uppercase letter, one number, and one special character."
+    placeholder="Enter your password"
+  >
+  <br><br>
+
+ 
+  <label for="gmail">Gmail</label>
+  <input 
+    type="text" 
+    id="gmail" 
+    name="email_gmail" 
+    required 
+    pattern="[a-z0-9._%+-]+@gmail\.com" 
+    title="Please enter a valid Gmail address (e.g., example@gmail.com)"
+    placeholder="example@gmail.com"
+  >
+  <br><br>
+
+
+  <label for="yahoo">Yahoo</label>
+  <input 
+    type="text" 
+    id="yahoo" 
+    name="email_yahoo" 
+    required 
+    pattern="[a-z0-9._%+-]+@yahoo\.com" 
+    title="Please enter a valid Yahoo address (e.g., example@yahoo.com)"
+    placeholder="example@yahoo.com"
+  >
+
+<button type="submit">Submit</button>
+</form>
+</body>
+</html>
