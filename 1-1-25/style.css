@@ -34,6 +34,9 @@
 
     
 }
+.b1,.b2{
+  display: inline-block;
+}
 
 .parent {
     height: 500px;
@@ -56,13 +59,13 @@
    
   }
 
-  .b1{
+  .b11{
     border: 5px solid lightblue;
     margin-top: 30px;
     padding: 20px;
   }
 
-  .b2
+  .b22
   {border: 5px solid red;
     margin-bottom: 30px;
     padding: 20px;
