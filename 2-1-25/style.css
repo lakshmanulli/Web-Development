@@ -1,0 +1,18 @@
+.outer-box {
+    position: relative;
+    width: 300px; 
+    height: 300px; 
+    background-color: red;
+    border: 2px solid;
+}
+
+.inner-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px; 
+    height: 100px;
+    background-color: black; 
+    border: 2px solid black;
+    
+}
